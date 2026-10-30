@@ -69,3 +69,30 @@ public class StackGUI extends JPanel {
         return buttons;
     }
 
+ /*Alberto Jr.S.Barluado
+ * Course/Year: BSIT 2
+ * Subject: DATA STRUCTURES AND ALGORITHMS
+ * This section builds the additional stack operation buttons,
+ * status bar, and reusable button creation method.
+ *
+ * Acknowledgements:
+ * OpenAI ChatGPT (GPT-6) assisted with organizing the GUI
+ * components and implementing reusable button functionality.
+ *
+ * AI Prompt:
+ * "Help divide the Java Swing StackGUI extra buttons,
+ * status bar, and reusable button creation method into
+ * three development stages with descriptions."
+ */
+    
+    // Builds the extra stack operation buttons.
+    private JPanel buildExtraButtons() {
+        JPanel buttons = new JPanel();
+
+        buttons.add(makeButton("CLEAR", e -> onClear()));
+        buttons.add(makeButton("CHECK STACK", e -> onCheck()));
+        buttons.add(makeButton("RANDOM", e -> onRandom()));
+
+        return buttons;
+    }
+
